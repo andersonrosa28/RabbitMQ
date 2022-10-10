@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("RABBITMQ_FANOUT")
 @Import({ RabbitAutoConfiguration.class })
-public class MachineAMQPFanoutConfig implements MachineAMQPConfig {
+public class MachineAMQPFanoutConfig implements MachineAMQPConfig<Exchange> {
 
     public static String EXCHANGE_NAME = "MachinesFanout";
 

@@ -1,10 +1,8 @@
 package com.example.apiproducer.domain.machine;
 
-import org.springframework.amqp.core.Exchange;
-
-public interface MachineAMQPConfig {
+public interface MachineAMQPConfig<OUTPUT> {
 
     String getNameExchange();
 
-    Exchange declareExchange();
+    OUTPUT declareExchange();
 }

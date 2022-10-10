@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("RABBITMQ_DIRECT")
 @Import({ RabbitAutoConfiguration.class })
-public class MachineAMQPDirectConfig implements MachineAMQPConfig {
+public class MachineAMQPDirectConfig implements MachineAMQPConfig<Exchange> {
 
     public static String EXCHANGE_NAME = "MachinesDirect";
 
